@@ -16,3 +16,48 @@ pip install numpy
 import numpy as np 
 
 print(np)
+
+
+-----------------------------------------------------------------------
+
+DFS --- depth first search 
+
+SCC -- strongly connected components -- directed graph 
+
+    undirected -> bridges 
+
+
+    strongly connected component is a group of vertices where every vertex can reach every other vertex.
+
+    X ---------> Y 
+    |            |
+    |            |
+    |            |
+    A  <------- Z
+
+    X Y Z A
+
+    disc[X,Y,Z,A             ]
+    low [X,Y,Z,X             ] 
+
+    X Y Z A 
+
+    low [A ] = min( low[A] , disc[X]) 
+    low[A] = X 
+--------------------------------------------------------------------------------------
+
+
+eye() identity() 
+
+
+identity -> sqaure matrix  , row , col->row, 1, no k parameter  
+eye      -> not necessary  , row , col , 1 , yes we have 
+
+
+
+
+arr = np.arange(1,11); 
+
+zero_like()
+empty_like()
+full_like() 
