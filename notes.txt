@@ -1,0 +1,248 @@
+what is Pandas ->
+         open source python library ,used for data manipulation and data analysis. 
+
+         we can deal with tabular data , mixure of data types. 
+
+
+read data from excel  , csv => organize row and columns => handling of missing values => 
+                perform mathematical operation 
+                filter , sort 
+                analyze large dataset. 
+
+
+why pandas?
+
+Name        python  Java    
+abc         90      90
+def         80      80
+xyz         60      60 
+
+python -> list dictionary -> iterative process -> slow -> memory allocation 
+
+
+difference between numpy and pandas? 
+
+numpy                                   pandas 
+numerical computation                   data analysis 
+mainly on arrays                        Series and DateFrame
+supports md arrays                      supports labeled rows and columns 
+best for mathematical operation         best for structured data 
+ndarray                                 Series , DateFrame
+
+
+installation? and import ? 
+pip install pandas 
+
+when we have vanlilla python we have to install manually 
+if we use colab or juypter or any powerfull ide/webapp then we will get pre install 
+
+
+import pandas as pd
+
+print(pd.___version__)
+
+
+
+Maini datastructure in pandas 
+
+1)Series 
+    one dimensional array --- labeled array 
+    e.g student name , student maths marks ,
+
+2)DateFrame
+    two dimensional labeled datastructure contains rows and columns 
+
+
+-------------------------------------------------------------------------------------
+how to creatae Series in pandas? 
+
+pd.Series(data)
+
+data => list - 1D array 
+
+s1 = pd.Series([10,20,30,40,50])
+
+list = [10,20,30,40,50]
+s1 = pd.Series(list)
+
+
+print(s1)
+
+index | data 
+dtype 
+
+output :
+0    10
+1    20
+2    30
+3    40
+4    50
+dtype: int64
+
+
+left side index 
+right side values 
+index starts with 0 by default 
+
+can we have string or floating point data in Series? 
+
+names = pd.Series(["Ram","shyam","sita"])
+print(names)
+
+
+same we can have float and boolean values 
+
+
+
+----------------------------------------------------------------------------
+custom index 
+
+marks = [80,70,90]
+
+s1 = pd.Series(marks)
+
+s1 = pd.Series(marks,index=["ram","shyam","sita"])
+print(s1)
+
+output: 
+ram      80
+shyam    70
+sita     90
+dtype: int64
+
+
+what if we have duplicate labeled?
+
+s1 = pd.Series([90,80,70,60],index=["ram","shyam","sita","ram"])
+print(s1)
+
+output: 
+ram      90
+shyam    80
+sita     70
+ram      60
+dtype: int64
+
+
+#can we create Series using dictionary? 
+
+student= {
+    "ram":90,
+    "shyam":80,
+    "sita":70
+}
+
+
+s1 = pd.Series(student) 
+print(s1)
+output: 
+ram      90
+shyam    80
+sita     70
+dtype: int64
+
+dictionary keys becomes indexes. 
+
+-----------------------------------------------------------------------
+
+#Series using scaler values? 
+
+s1= pd.Series(100,index=["India","Japan","USA"])
+print(s1)
+
+output:
+India    100
+Japan    100
+USA      100
+dtype: int64
+
+
+--------------------------------------------------------------------------------------------
+#accessing Series elements ?
+
+s1 = pd.Series([10,20,30,40,50])
+
+print(s1[0]) #index 0 => 10  
+print(s1[1]) #index 1 => 20 
+
+
+#accessing using custom labeles 
+
+s1 = pd.Series([90,80,70,60],index=["ram","shyam","sita","ram"])
+print(s1["ram"])
+print(s1["sita"])
+
+x = s1["ram"] #Series 
+y = s1["sita"] #value - int 
+
+print(type(x))
+print(type(y))
+
+
+
+#accessing using slicing 
+s1 = pd.Series([90,80,70,60])
+print(s1[0:2]) # 0,1
+
+
+#import Series attributes
+index -> return index labels 
+values -> return actual values 
+dtype -> return data type 
+size -> return number of elements
+shape -> return dimension
+ndim - return number of dimensions
+empty -> check whether Series is empty 
+name -> return Series name 
+
+print(s1.empty)
+print(s1.size)
+print(s1.ndim)
+print(s1.index)
+print(s1.values)
+print(s1.name)
+
+
+#import Series function ()
+
+head() -> first 5 elements 
+head(3) -> first 3 elements 
+tail() -> last 5 elements
+tail(3) -> last 3 elements 
+
+min()   minimum
+max()   maximum
+sum()   sum of values
+mean()  average
+count() number of non-null values 
+unique() unique values 
+nunique() number of unique values 
+values_counts() frequnce of values 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

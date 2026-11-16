@@ -1,0 +1,22 @@
+1) creatae Series using 10 integer values.
+2) creatae a Series using 5 city names. 
+3) creatae Series using dictionary. 
+4) creatae Series with custom index.
+
+
+marks = pd.Series([45,67,89,92,58,78,92,34,67,88],index=["A","B","C","D","E","F","G","H","I","J"])
+
+1) Highest marks 
+2) lowest mark 
+3) average 
+4) median 
+5) top 3 
+6) bottom 3 
+7) student above average 
+8) student below average 
+9) student who score 90+ 
+10) student who fail ( <50)
+11) duplicate score 
+12) Frequency of scores
+13) list all unique scores. 
+
