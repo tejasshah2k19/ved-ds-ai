@@ -450,6 +450,55 @@ can we add new column?
 yes 
 
 
+df["Country"] = "India"
+print(df)
+
+df["futureAge"] = df["Age"] + 25 
+
+print(df) 
+
+df["Marks"] = df["Marks"] + 2 
+
+df.loc[0,"Marks"] = 99
+
+df.loc[ df["Marks"] > 80 , "Grade2" ] = 'B'
+
+print(df)
+
+df2 = df.drop("Age",axis=1)
+
+print(df)
+print(df2)
+
+
+#df.drop("Age",axis=1,inplace=True)
+#print(df)
+
+#deleing multiple columns 
+df.drop(["Age","Grade2"],axis=1,inplace=True)
+
+#axis = 0 =>row 
+#axis = 1 => column
+#inplace=True -> modify original data frame 
+
+#Renaming columns 
+df.rename(columns={
+    "Name":"StudentName",
+    "Marks":"TotalMarks"
+},inplace=True)
+
+print(df)
+
+#change index 
+df.set_index("StudentName",inplace=True)
+print(df)
+
+df.reset_index(inplace=True)
+print(df)
+
+
+
+
 
 
 
