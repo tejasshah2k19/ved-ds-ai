@@ -1,0 +1,24 @@
+Employee Management 
+
+
+EmpId Name  Dept    Salary City 
+101   Ram   HR      30000   LA
+102   Priya Admin   50000   NY
+103   Sita  Sales   30000   NP     
+104   Shaym HR      60000   LA
+
+
+1) create data frame of above data 
+2) display first 3 Employee
+3) display last 2 Employee
+4) display only name and Salary of all Employee
+5) find total Salary
+6) find average Salary
+7) display Employee with Salary greater that 30000
+8) add a new column called bonus (10% of Salary)
+9) change priya's Salary t0 40000
+10) delete city column 
+11) rename Salary to MonthlySalary 
+12) display data frame information. 
+
+
