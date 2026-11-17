@@ -220,6 +220,234 @@ nunique() number of unique values
 values_counts() frequnce of values 
 
 
+pandas => panel data 
+
+--------------------------------------------------------------
+
+What is Data Frame? 
+Data Frame : two dimensional labeled data structure that stores row and columns 
+
+similiar to -> excel , sql database table , html table 
+
+example 
+
+Student Database 
+
+index   Name    Age     Course 
+0       Ram     25      C
+1       Shyam   26      C++
+2       Rock    31      Java 
+
+
+rows represent individuai student records. 
+columns represent students attributes. 
+index - label 
+
+
+difference between Series and DataFrame 
+
+Series                          DataFrame 
+1D Data                         2D Data 
+single column data              multiple columns 
+one index axis                  row and columns axis 
+pd.Series()                     pd.DataFrame()
+
+
+Creating DataFrame 
+
+
+import pandas as pd 
+
+data = {
+    "Name":["Ram","Shyam","Sita"],
+    "Age":[25,26,24],
+    "Marks":[80,85,96]
+}
+
+df = pd.DataFrame(data)
+s1 = pd.Series(data)
+
+print(df)
+print(s1)
+
+output: 
+
+    Name  Age  Marks
+0    Ram   25     80
+1  Shyam   26     85
+2   Sita   24     96
+
+index : 0 
+dictionary keys -> column names 
+
+
+
+DataFrame using list of list 
+
+data = [
+    ["Name","Ram","Shyam","Sita"],
+    ["Age",25,26,24],
+    ["Marks",80,85,96]
+]
+
+df = pd.DataFrame(data,columns=["Name","Age","Marks"])
+
+print(df)
+
+
+#list of dictionaries 
+
+data = [
+    {
+        "Name":"Ram",
+        "Age":25,
+        "Marks":85
+    },
+    {
+        "Name":"Shyam",
+        "Age":26,
+        "Marks":90
+    },
+    {
+        "Name":"Ram",
+        "Age":55,
+        "Marks":80
+    }
+]
+
+
+#custom index 
+
+
+data = {
+    "Name":["Ram","Shyam","Sita"],
+    "Age":[25,26,24],
+    "Marks":[80,85,96]
+}
+
+df = pd.DataFrame(data)
+print(df)
+df = pd.DataFrame(data,index=["S1","s2","S3"])
+print(df)
+
+
+
+#DataFrame attributes
+
+df.index                returns row index
+df.columns              return columns names 
+df.values               return data as numpy array 
+df.dtypes 
+df.shape 
+df.size 
+df.ndim
+df.empty 
+
+df.T                    transpose data frame 
+
+
+head()
+head(3)
+
+tail()
+tail(3)
+
+info() 
+    column names 
+    number of non null values 
+    data types 
+    memory usage 
+
+
+<class 'pandas.core.frame.DataFrame'>
+Index: 3 entries, S1 to S3
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   Name    3 non-null      object
+ 1   Age     3 non-null      int64 
+ 2   Marks   3 non-null      int64 
+dtypes: int64(2), object(1)
+memory usage: 204.0+ bytes
+None
+
+
+
+describe()
+    - generates statisitcal summary of numerical columns 
+    count , mean , standard deviation , minimum , 25% percentile , 50% percentile , 75% percentile , maximum 
+
+
+other useful functions : 
+
+df.count()
+df.sum()
+df.sum(numeric_only=True)
+df.min()
+df.max()
+df.mean()
+df.nunique()
+
+
+
+---------------------------------------------------------------------
+
+accessing DataFrame columns
+
+we can use squre brackets 
+
+
+print(df["Name"])
+print(type(df["Name"]))
+
+we can also use dot notation 
+print(df.Name)
+
+we can also access multiple columns 
+print(df[ ["Name","Marks"] ] )
+
+
+#accessing rows 
+
+loc , iloc 
+
+print("$"*100)
+print(df)
+
+print(df.loc['S1'])
+print(df.iloc[0])
+
+
+
+print("$"*100)
+df = pd.DataFrame(data)
+print(df)
+
+print(df.loc[0])
+print(df.iloc[0])
+
+print(df.loc[0:2])# 0 1 2 
+print(df.iloc[0:2])# 0 1 
+
+
+
+#row * column - selection 
+print(df.loc[0:2,["Name","Age"]])
+
+
+difference between loc and iloc 
+
+loc                             iloc
+uses labeles                    uses integer position 
+label-based                     position based 
+slice includes end label        slice excluede end position 
+df.loc[0]                       df.iloc[0]
+df.loc['S1']                    df.iloc[0]
+
+-----------------------------------------------------
+
+can we add new column? 
+yes 
 
 
 
