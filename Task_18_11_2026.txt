@@ -1,0 +1,82 @@
+Assignment 1: Employee Management System
+Create the following DataFrame:
+EmpID	Name	Department	Salary	Age
+101	Rahul	IT	45000	25
+102	Priya	HR	35000	28
+103	Amit	IT	55000	30
+104	Neha	Sales	25000	23
+105	Raj	HR	60000	32
+106	Kiran	IT	40000	26
+107	Meena	Sales	50000	29
+108	Jay	IT	30000	22
+
+Tasks:
+1. Find employees earning more than 40000.
+2. Find employees working in IT.
+3. Find employees whose age is below 25.
+4. Find employees earning between 30000 and 50000.
+5. Find employees from IT or HR.
+6. Find employees who are not working in Sales.
+7. Find employees whose salary is greater than 40000 and age is above 25.
+8. Find employees earning less than 35000 or age greater than 30.
+9. Display only employee names and salaries for employees earning above 45000.
+10. Use query() to find employees with salary greater than 40000.
+
+
+Assignment 2: E-Commerce Product Filtering
+Create a DataFrame:
+Product	Category	Price	Stock
+Laptop	Electronics	55000	10
+Mobile	Electronics	25000	25
+Chair	Furniture	5000	15
+Table	Furniture	8000	8
+Mouse	Electronics	500	50
+Keyboard	Electronics	1500	30
+Sofa	Furniture	35000	5
+
+Tasks:
+1. Find products costing more than 10000.
+2. Find products with stock below 10.
+3. Find products from Electronics category.
+4. Find products with prices between 1000 and 10000.
+5. Find Electronics products costing more than 1000.
+6. Find products that are not Furniture.
+7. Find products whose category is Electronics or Furniture using isin().
+8. Use query() to find products with stock greater than 10.
+9. Display only Product and Price for products costing below 10000.
+10. Use where() to replace prices below 5000 with zero.
+
+
+Assignment 3: Student Result Analysis
+Create a DataFrame containing 10 students with the following columns:
+- RollNo
+- Name
+- Course
+- Python
+- Java
+- SQL
+- City
+Tasks:
+1. Find students scoring more than 80 in Python.
+2. Find students scoring below 40 in Java.
+3. Find students who scored above 70 in all three subjects.
+4. Find students from Ahmedabad or Surat.
+5. Find students enrolled in Python or Java.
+6. Find students whose SQL marks are between 50 and 80.
+7. Find students whose Python marks are not equal to 100.
+8. Find students older than 20 if you add an Age column.
+9. Use query() to find students with Python marks greater than 75.
+10. Display only Name, Python and Java for students scoring above 80 in Python.
+
+
+Important Interview Questions
+1. What is Boolean indexing in Pandas?
+2. What is the difference between & and and?
+3. What is the difference between isin() and between()?
+4. What is the difference between loc and query()?
+5. What is the difference between where() and mask()?
+6. Can we use multiple conditions in a DataFrame?
+7. Why do we use parentheses around conditions?
+8. What is the purpose of @ inside query()?
+9. How can we filter records based on multiple columns?
+10. How do you select specific columns after filtering?

@@ -7,7 +7,7 @@ EmpId Name  Dept    Salary City
 103   Sita  Sales   30000   NP     
 104   Shaym HR      60000   LA
 
-
+   
 1) create data frame of above data 
 2) display first 3 Employee
 3) display last 2 Employee
