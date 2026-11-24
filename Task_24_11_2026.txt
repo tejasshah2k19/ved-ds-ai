@@ -1,0 +1,29 @@
+#college student record 
+
+data = {
+"RollNo": [101, 102, 103, 104, 105, 106],
+"Name": [
+"Rahul", "Priya", "Amit",
+"Neha", "Raj", "Kiran"
+],
+"Course": [
+"Python", None, "Java",
+"Python", None, "Java"
+],
+"Marks": [85, np.nan, 65, 95, np.nan, 55],
+"Age": [21, 22, np.nan, 23, 21, np.nan],
+"City": [
+"Ahmedabad", "Surat", None,
+"Ahmedabad", "Surat", None
+]
+}
+
+
+
+1: Display original data using data frame 
+2: print missing value summary columnwise
+3: fill missing course with value 'Not Assigned'
+4: fill missing marks with mean 
+5: fill missing age with median 
+6: fill missing city with 'unknown'
+7: we are done with cleaning -- now verify how many missing values.  
