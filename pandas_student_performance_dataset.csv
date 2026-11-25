@@ -1,0 +1,48 @@
+Student_ID,Name,Course,City,Test_Marks,Assignment_Marks,Payment_Status
+101,Aarav Patel,Python,Ahmedabad,85.0,90.0,Paid
+102,Diya Shah,Java,Ahmedabad,78.0,82.0,Paid
+103,Rohan Mehta,Python,Surat,92.0,88.0,Pending
+104,Isha Desai,Data Science,Vadodara,67.0,75.0,Paid
+105,Kabir Joshi,Java,Ahmedabad,,80.0,Paid
+106,Mira Trivedi,Python,Surat,74.0,,Pending
+107,Arjun Parmar,Data Science,Rajkot,88.0,91.0,Paid
+108,Nisha Shah,Java,Ahmedabad,81.0,77.0,paid
+109,Dev Patel,Python,Vadodara,65.0,70.0,Pending
+110,Anaya Mehta,Data Science,Surat,95.0,93.0,Paid
+111,Vihaan Desai,Java,Rajkot,72.0,68.0,Paid
+112,Sara Joshi,Python,Ahmedabad,89.0,84.0,Pending
+113,Krish Shah,Data Science,Ahmedabad,,79.0,Paid
+114,Tara Patel,Java,Surat,83.0,86.0,Paid
+115,Neil Mehta,Python,Rajkot,76.0,73.0,Pending
+116,Pooja Desai,Data Science,Vadodara,91.0,90.0,Paid
+117,Manav Joshi,Java,Ahmedabad,69.0,74.0,Pending
+118,Riya Trivedi,Python,Surat,84.0,87.0,Paid
+119,Om Parmar,Data Science,Rajkot,77.0,81.0,Paid
+120,Zara Shah,Java,Vadodara,90.0,92.0,Pending
+121,Aarav Patel,Python,Ahmedabad,85.0,90.0,Paid
+122,Diya Shah,Java,Ahmedabad,78.0,82.0,Paid
+123,Rohan Mehta,python,Surat,92.0,88.0,Pending
+124,Isha Desai,Data Science,Vadodara,67.0,75.0,Paid
+125,Kabir Joshi,Java,Ahmedabad,80.0,,PAID
+126,Mira Trivedi,Python,Surat,74.0,72.0,pending
+127,Arjun Parmar,Data Science,Rajkot,88.0,91.0,Paid
+128,Nisha Shah,Java,Ahmedabad,81.0,77.0,Paid
+129,Dev Patel,Python,Vadodara,65.0,70.0,Pending
+130,Anaya Mehta,Data Science,Surat,95.0,93.0,Paid
+131,Vihaan Desai,Java,Rajkot,72.0,68.0,paid
+132,Sara Joshi,Python,Ahmedabad,89.0,84.0,Pending
+133,Krish Shah,Data Science,Ahmedabad,70.0,79.0,Paid
+134,Tara Patel,Java,Surat,83.0,86.0,Paid
+135,Neil Mehta,Python,Rajkot,76.0,73.0,Pending
+136,Pooja Desai,Data Science,Vadodara,91.0,90.0,Paid
+137,Manav Joshi,Java,Ahmedabad,69.0,74.0,Pending
+138,Riya Trivedi,Python,Surat,84.0,87.0,Paid
+139,Om Parmar,Data Science,Rajkot,77.0,81.0,Paid
+140,Zara Shah,Java,Vadodara,90.0,92.0,Pending
+104,Isha Desai,Data Science,Vadodara,67.0,75.0,Paid
+111,Vihaan Desai,Java,Rajkot,72.0,68.0,Paid
+141,  Reva Patel  , PYTHON ,Ahmedabad,86.0,89.0,paid
+142,Smit Shah,Java,,,75.0,Pending
+143,Aditi Mehta,Data Science,Surat,82.0,,
+144,Jay Desai,Python,Vadodara,70.0,72.0,Paid
+144,Jay Desai,Python,Vadodara,70.0,72.0,Paid

@@ -1,0 +1,79 @@
+Student Performance Analysis
+Scenario
+You are a Data Analyst working at a training institute. Your institute has collected student records from multiple batches, but the dataset contains:
+- Duplicate student records
+- Missing values
+- Different course names
+- Missing marks
+- Missing city names
+- Inconsistent payment status
+- Multiple records for some students
+
+
+Your task
+Clean the dataset, analyze student performance, and generate meaningful insights using Pandas.
+
+data set => 
+pandas_student_performance_dataset.csv 
+
+
+Dataset columns
+Column	Description
+Student_ID	Unique student identifier
+Name	Student name
+Course	Course enrolled
+City	Student city
+Test_Marks	Test marks out of 100
+Assignment_Marks	Assignment marks out of 100
+Payment_Status	Paid / Pending
+
+
+TASK 
+
+Part A – Explore the dataset
+1. Load the CSV file.
+2. Display the first 10 records.
+3. Display the last 5 records.
+4. Find the total number of rows and columns.
+5. Display column names.
+6. Find the total missing values in each column.
+7. Find the number of duplicate rows.
+8. Find the number of unique courses.
+9. Find all unique cities.
+10. Find the number of unique payment statuses.
+
+
+Part B – Data Cleaning
+11. Remove exact duplicate records.
+12. Find duplicate Student_ID values.
+13. Standardize the Name column by removing unwanted spaces.
+14. Standardize the Course column:
+- python → Python
+- PYTHON → Python
+- java → Java
+15. Standardize Payment_Status:
+- paid → Paid
+- PAID → Paid
+- pending → Pending
+16. Fill missing Test_Marks with the median.
+17. Fill missing Assignment_Marks with the median.
+18. Fill missing City with the most frequent city.
+19. Fill missing Payment_Status with Unknown.
+
+
+
+
+Part C – Data Analysis
+20. Find the number of students enrolled in each course.
+21. Find the number of students from each city.
+22. Find the number of students according to payment status.
+23. Find the average test marks.
+24. Find the average assignment marks.
+25. Find the highest test marks.
+26. Find the lowest test marks.
+27. Find students who scored more than 80 in test marks.
+28. Find students who scored less than 60 in either test or assignment.
+29. Find the course with the highest number of students.
+30. Find the average test marks for each course.
+
+
